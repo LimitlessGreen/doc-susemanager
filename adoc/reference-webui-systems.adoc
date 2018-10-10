@@ -1803,147 +1803,85 @@ Organization > Group > Single System
 
 The following actions executed on individual systems from the System Details page may be performed for multiple systems via the System Set Manager.
 The System Set Manager can be used to schedule actions on both Salt and Traditional systems.
-The following table provides information on what actions may be performed across both Salt and Traditional systems.
+The following section lists available SSM functions and provides information on what actions may be performed across both Salt and Traditional systems.
 These two methods have different actions which may be accessed with the System Set Manager:
 
+=== Available SSM Functions
 
-[cols="1a,1a,1a", options="header"]
+The following functions are available for use with the System Set manager. The tables for each function list support status for Salt and traditional clients.
+
+List Systems::
+List available systems for use with SSM.
+
 |===
-| System Set Manager: Overview
-| Traditional SSM
-| Salt SSM
-| Systems:
+| Function | Traditional SSM | Salt SSM
 
-* List Systems
+| List Systems | Supported | Supported
+|===
 
-| Supported
+Install Patches::
+Schedule patch updates on selected systems.
+|===
+| Function | Traditional SSM | Salt SSM
 
-* Supported
+| Install Patches | Supported | Supported
+|===
 
-| Supported
+Install Packages::
+Upgrade, Install, Remove and Verify packages on selected clients.
+|===
+|Function | Traditional SSM | Salt SSM
 
-* Supported
+| Upgrade Packages | Supported | Supported
+| Install Packages | Supported | Supported
+| Remove Packages  | Supported | Supported
+| Verify Packages  | Supported | Not Available
+|===
 
-|Install Patches:
+Groups::
+Create and Manage system groups.
+|===
+| Function | Traditional SSM | Salt SSM
 
-* Schedule Patch Updates
+| Create Group | Supported | Supported
+| Manage Group | Supported | Supported
+|===
 
-| Supported
+Channels::
+Adjust channel membership, channel subscriptions deploy and diff between channels.
+|===
+| Function | Traditional SSM | Salt SSM
 
-* Supported
+| Channel Memberships | Supported | Supported
+| Channel Subscriptions | Supported | Not Available
+| Deploy / Diff Channels | Supported | Not Available
+|===
 
-| Supported
+Provisioning::
+Autoinstall systems, tag for a snapshot, execute remote commands, and work with power management and operations.
+|===
+| Function | Traditional SSM | Salt SSM
 
-* Supported
+| Autoinstall Systems | Supported | Not Available
+| Tag for a Snapshot | Supported | Not Available
+| Remote Commands | Supported | Not Available
+| Power Management | Supported | Not Available
+| Power Management Operations | Supported | Not Available
+|===
 
-| Install Packages:
+Misc::
+Miscellaneous functions.
+|===
+| Function | Traditional SSM | Salt SSM
 
-* Upgrade
-* Install
-* Remove
-* Verify
-
-| Supported
-
-* Supported
-* Supported
-* Supported
-* Supported
-
-| Limited
-
-* Supported
-* Supported
-* Supported
-* Not Available
-
-| Groups:
-
-* Create
-* Manage
-
-| Supported
-
-* Supported
-* Supported
-
-| Supported
-
-* Supported
-* Supported
-
-| Channels:
-
-* Channel Memberships
-* Channel Subscriptions
-* Deploy / Diff Channels
-
-| Supported
-
-* Supported
-* Supported
-* Supported
-
-| Limited
-
-* Supported
-* Not Available
-* Not Available
-
-| Provisioning:
-
-* Autoinstall Systems
-* Tag for Snapshot
-* Remote Commands
-* Power Management
-* Power Management Operations
-
-| Supported
-
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-
-| Not Available
-| Misc:
-
-* Update System Preferences
-* Update Hardware Profiles
-* Update Package Profiles
-* Run Remote Commands
-* Set and Remove Custom Values for Selected Systems
-* Reboot Systems
-* Migrate Systems to another Organization
-* Delete Systems from SUSE Manager
-
-| Supported
-
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-
-| Supported
-
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-* Supported
-
+| Update System Preferences                          | Supported | Supported
+| Update Hardware Profiles                           | Supported | Supported
+| Update Package Profiles                            | Supported | Supported
+| Run Remote Commands                                | Supported | Supported
+| Set and Remove Custom Values for Selected Systems  | Supported | Supported
+| Reboot Systems                                     | Supported | Supported
+| Migrate Systems to another Organization            | Supported | Supported
+| Delete Systems from SUSE Manager                   | Supported | Supported
 |===
 
 
